@@ -1,0 +1,43 @@
+{
+  "id": "spc:gs1-resolver-contract",
+  "number": 2002,
+  "slug": "gs1-resolver-contract",
+  "title": "GS1 Resolver Contract",
+  "status": "active",
+  "supersedes": [],
+  "superseded_by": [],
+  "pack": "pack:gs1-product-link-event-data",
+  "scope": {
+    "governs": "GS1 Product Link And Visibility Events",
+    "excludes": [
+      "Other governance packs",
+      "Downstream implementation-specific conformance claims",
+      "Repository-specific feature, claim, test, evidence, boundary, and release rows"
+    ]
+  },
+  "authority_sources": [
+    "GS1 Web Vocabulary",
+    "GS1 Digital Link",
+    "GS1 Digital Link URI Syntax",
+    "GS1 Conformant Resolver",
+    "EPCIS and CBV",
+    "GS1 General Specifications",
+    "GS1 Global Data Model",
+    "GDSN"
+  ],
+  "requirements": [
+    "Treat GS1 Product Link And Visibility Events as the only governed domain for this pack.",
+    "Do not cross-link this pack to other governance packs.",
+    "Use packaged ADR and SPEC documents as immutable authority inputs for downstream SSOT synchronization.",
+    "Create downstream features, claims, tests, evidence, risks, boundaries, and releases outside the pack metadata lifecycle."
+  ],
+  "notes": [
+    "This document was seeded from digital-analytics-customer-data-collection-sources.md.",
+    "This pack intentionally does not refer to sibling governance packs."
+  ],
+  "spec_kind": "governance",
+  "adr_ids": [
+    "adr:gs1-product-link-boundary",
+    "adr:gs1-visibility-event-authority"
+  ]
+}

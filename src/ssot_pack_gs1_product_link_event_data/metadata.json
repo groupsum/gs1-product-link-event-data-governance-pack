@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "ssot_package_name": "ssot-pack-gs1-product-link-event-data",
+  "origin": {
+    "id": "pack:gs1-product-link-event-data",
+    "package_name": "ssot-pack-gs1-product-link-event-data",
+    "import_name": "ssot_pack_gs1_product_link_event_data",
+    "kind": "governance-pack",
+    "title": "GS1 Product Link And Visibility Events",
+    "description": "Installable SSOT governance pack for GS1 Digital Link, GS1 resolver behavior, EPCIS/CBV visibility events, product identifiers, and product master data.",
+    "homepage": "https://github.com/groupsum/gs1-product-link-event-data-governance-pack",
+    "repository": "https://github.com/groupsum/gs1-product-link-event-data-governance-pack"
+  },
+  "compatibility": {
+    "python": ">=3.10,<3.15",
+    "ssot_registry_schema": ">=0.4.0",
+    "ssot_pack_contract": ">=0.2.17,<0.3.0"
+  },
+  "trust": {
+    "trusted_by_default": false,
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-gs1-product-link-event-data"
+  },
+  "documents": {
+    "adr": {
+      "manifest_path": "templates/adr/manifest.json"
+    },
+    "spec": {
+      "manifest_path": "templates/specs/manifest.json"
+    }
+  }
+}

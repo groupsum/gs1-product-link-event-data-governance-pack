@@ -1,0 +1,38 @@
+[
+  {
+    "id": "adr:gs1-product-link-boundary",
+    "number": 1001,
+    "slug": "gs1-product-link-boundary",
+    "title": "GS1 Product Link Boundary",
+    "filename": "ADR-1001-gs1-product-link-boundary.yaml",
+    "target_path": ".ssot/adr/ADR-1001-gs1-product-link-boundary.yaml",
+    "sha256": "e1b3c60345c2ecfc0bfa2ba3353b2eb7edb0b49309726bd6a33d4041bbc19758",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-gs1-product-link-event-data",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  },
+  {
+    "id": "adr:gs1-visibility-event-authority",
+    "number": 1002,
+    "slug": "gs1-visibility-event-authority",
+    "title": "GS1 Visibility Event Authority",
+    "filename": "ADR-1002-gs1-visibility-event-authority.yaml",
+    "target_path": ".ssot/adr/ADR-1002-gs1-visibility-event-authority.yaml",
+    "sha256": "69ffa7641c94d652ece357217a0d69aad097615de9ea13c34b9a48dd3b1935c6",
+    "origin": "extension-pack",
+    "reservation_owner": "extension-pack:ssot-pack-gs1-product-link-event-data",
+    "immutable": true,
+    "minimum_schema_version": "0.4.0",
+    "introduced_in": "0.1.0",
+    "status": "accepted",
+    "supersedes": [],
+    "superseded_by": [],
+    "status_notes": []
+  }
+]
