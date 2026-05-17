@@ -1,0 +1,39 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1001"
+number: 1001
+slug: "gs1-product-link-target-curation-authority"
+title: "GS1 Product Link Target Curation Authority"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "gs1"
+  - "digital-link"
+  - "resolver"
+summary: "GS1 Digital Link, URI Syntax, Conformant Resolver, and Web Vocabulary are the authoritative source family for curated product-link targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "GS1 Digital Link"
+  - "GS1 Digital Link URI Syntax"
+  - "GS1 Conformant Resolver"
+  - "GS1 Web Vocabulary"
+body: |-
+  ## Context
+  
+  The curated source set for GS1 product link behavior needs to keep GS1 Digital Link, GS1 Digital Link URI Syntax, GS1 Conformant Resolver, and GS1 Web Vocabulary targets distinct from visibility event and product master-data targets.
+  
+  ## Decision
+  
+  This repository treats GS1 Digital Link, GS1 Digital Link URI Syntax, GS1 Conformant Resolver, and GS1 Web Vocabulary as the authoritative source family for curated product-link targets.
+  
+  The curation boundary includes URI construction, URI syntax, resolver behavior, linked-data publication vocabulary, and product-link representation targets.
+  
+  The curation boundary does not authorize downstream implementation claims, runtime feature rows, evidence rows, or cross-pack dependency statements.
+  
+  ## Consequences
+  
+  Repo-local source updates for product-link targets must preserve the GS1 Digital Link, URI syntax, resolver, and Web Vocabulary source family as separate curation concerns.
+

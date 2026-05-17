@@ -30,8 +30,11 @@ GS1 Product Link And Visibility Events
 
 ## Included ADRs
 
-- `adr:gs1-product-link-boundary` - GS1 Product Link Boundary
-- `adr:gs1-visibility-event-authority` - GS1 Visibility Event Authority
+- `adr:gs1-digital-link-uri-policy` - GS1 Digital Link URI Policy
+- `adr:gs1-resolver-behavior-policy` - GS1 Resolver Behavior Policy
+- `adr:gs1-web-vocabulary-publication-policy` - GS1 Web Vocabulary Publication Policy
+- `adr:epcis-cbv-visibility-event-policy` - EPCIS CBV Visibility Event Policy
+- `adr:gs1-product-master-data-policy` - GS1 Product Master Data Policy
 
 ## Included SPECs
 

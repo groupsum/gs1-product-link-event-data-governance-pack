@@ -1,0 +1,27 @@
+{
+  "id": "adr:epcis-cbv-visibility-event-policy",
+  "number": 1004,
+  "slug": "epcis-cbv-visibility-event-policy",
+  "title": "EPCIS CBV Visibility Event Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Supply-chain visibility events need a shared model for event structure and controlled vocabulary semantics.",
+    "Event capture, exchange, analytics, and audit evidence depend on consistent EPCIS and CBV interpretation."
+  ],
+  "decision": [
+    "Use EPCIS as the authority for visibility event envelope and event type semantics.",
+    "Use CBV as the authority for controlled vocabulary values used by EPCIS events.",
+    "Preserve event type, business step, disposition, location, product identifier, and event time semantics in storage and export."
+  ],
+  "consequences": [
+    "Downstream implementations must validate event structure and controlled vocabulary values together.",
+    "Evidence should include accepted and rejected event fixtures for each supported event type.",
+    "Event export and replay tests should preserve event identity and business semantics."
+  ],
+  "authority_sources": [
+    "EPCIS",
+    "CBV"
+  ]
+}

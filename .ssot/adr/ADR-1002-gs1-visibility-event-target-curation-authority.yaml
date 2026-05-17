@@ -1,0 +1,37 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1002"
+number: 1002
+slug: "gs1-visibility-event-target-curation-authority"
+title: "GS1 Visibility Event Target Curation Authority"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "gs1"
+  - "epcis"
+  - "cbv"
+summary: "EPCIS and CBV are the authoritative source family for curated GS1 visibility-event targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "EPCIS"
+  - "CBV"
+body: |-
+  ## Context
+  
+  Visibility event targets use EPCIS event structures and CBV controlled vocabularies. These targets should not be collapsed into product master data or URI resolver behavior.
+  
+  ## Decision
+  
+  This repository treats EPCIS and CBV as the authoritative source family for curated visibility-event targets.
+  
+  The curation boundary includes EPCIS event envelope targets, EPCIS event type targets, CBV business-step targets, CBV disposition targets, and related visibility-event vocabulary targets.
+  
+  The curation boundary does not authorize downstream implementation claims, runtime event pipelines, evidence rows, or cross-pack dependency statements.
+  
+  ## Consequences
+  
+  Repo-local source updates for visibility events must preserve EPCIS and CBV as distinct target authorities and must keep event semantics separate from product-link URI mechanics.
+

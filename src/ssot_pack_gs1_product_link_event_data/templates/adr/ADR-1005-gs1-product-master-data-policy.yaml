@@ -1,0 +1,29 @@
+{
+  "id": "adr:gs1-product-master-data-policy",
+  "number": 1005,
+  "slug": "gs1-product-master-data-policy",
+  "title": "GS1 Product Master Data Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Product records require stable identifiers, trade item attributes, and synchronization rules before they can support trusted links or events.",
+    "Identifier allocation, attribute modeling, and product data synchronization have distinct GS1 authority sources."
+  ],
+  "decision": [
+    "Use GS1 General Specifications for identifier allocation, format, and validation decisions.",
+    "Use GS1 Global Data Model for product and trade item attribute decisions.",
+    "Use GDSN requirements for product data synchronization decisions.",
+    "Preserve the difference between identifier validation, attribute completeness, and synchronization payload conformance."
+  ],
+  "consequences": [
+    "Downstream implementations must keep product identifier, product attribute, and synchronization evidence separate.",
+    "Validation should include identifier format checks, required product attribute checks, and synchronized payload checks.",
+    "Evidence should show the source product record, normalized product data, and exported synchronization representation."
+  ],
+  "authority_sources": [
+    "GS1 General Specifications",
+    "GS1 Global Data Model",
+    "GDSN"
+  ]
+}

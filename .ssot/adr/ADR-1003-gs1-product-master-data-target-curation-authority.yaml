@@ -1,0 +1,38 @@
+schema_version: 9
+kind: "adr"
+id: "adr:1003"
+number: 1003
+slug: "gs1-product-master-data-target-curation-authority"
+title: "GS1 Product Master Data Target Curation Authority"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "gs1"
+  - "product-data"
+  - "gdsn"
+summary: "GS1 General Specifications, GS1 Global Data Model, GDSN, and GS1 Web Vocabulary are the authoritative source family for curated product master-data targets."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "GS1 General Specifications"
+  - "GS1 Global Data Model"
+  - "GDSN"
+  - "GS1 Web Vocabulary"
+body: |-
+  ## Context
+  
+  Product master-data targets depend on identifier allocation, product attribute modeling, and data synchronization sources. These targets are related to product links but govern different conformance concerns.
+  
+  ## Decision
+  
+  This repository treats GS1 General Specifications, GS1 Global Data Model, GDSN, and GS1 Web Vocabulary as the authoritative source family for curated product master-data targets.
+  
+  The curation boundary includes product identifier targets, trade item attribute targets, organization and location data targets, and product data synchronization targets.
+  
+  The curation boundary does not authorize downstream implementation claims, runtime product catalog features, evidence rows, or cross-pack dependency statements.
+  
+  ## Consequences
+  
+  Repo-local source updates for product master data must preserve identifier, trade item, linked-data vocabulary, and synchronization concerns as explicit curation targets.

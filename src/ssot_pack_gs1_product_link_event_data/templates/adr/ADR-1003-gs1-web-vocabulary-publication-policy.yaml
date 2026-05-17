@@ -1,0 +1,26 @@
+{
+  "id": "adr:gs1-web-vocabulary-publication-policy",
+  "number": 1003,
+  "slug": "gs1-web-vocabulary-publication-policy",
+  "title": "GS1 Web Vocabulary Publication Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Product, offer, organization, and location data often need public linked-data representation.",
+    "The GS1 Web Vocabulary provides product and trade item semantics that are more specific than generic web metadata."
+  ],
+  "decision": [
+    "Use GS1 Web Vocabulary terms for product, offer, organization, location, and trade item linked-data publication where those terms apply.",
+    "Preserve stable identifiers between product records, linked-data documents, and Digital Link URIs.",
+    "Publish only source-backed attributes and avoid inferring regulated or commercial claims without authoritative source data."
+  ],
+  "consequences": [
+    "Downstream implementations must trace public linked-data fields to product or organization source records.",
+    "Validation should check required vocabulary fields, identifier consistency, and unsupported field rejection.",
+    "Evidence should include representative linked-data documents and vocabulary validation results."
+  ],
+  "authority_sources": [
+    "GS1 Web Vocabulary"
+  ]
+}

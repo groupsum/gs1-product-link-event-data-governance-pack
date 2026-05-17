@@ -1,0 +1,28 @@
+{
+  "id": "adr:gs1-resolver-behavior-policy",
+  "number": 1002,
+  "slug": "gs1-resolver-behavior-policy",
+  "title": "GS1 Resolver Behavior Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "GS1 Digital Link resolver behavior determines how identifier URIs become useful application links.",
+    "Resolution behavior needs explicit decisions for target selection, redirects, content negotiation, and link relation handling."
+  ],
+  "decision": [
+    "Use GS1 Conformant Resolver behavior as the authority for resolver semantics.",
+    "Select resolver targets from explicit link metadata rather than implicit route assumptions.",
+    "Preserve content negotiation and link relation behavior in resolver tests and exported evidence.",
+    "Document redirect behavior and response status handling for each supported resolver path."
+  ],
+  "consequences": [
+    "Downstream implementations must make resolver target selection explainable and testable.",
+    "Resolver evidence should include request inputs, selected link relation, response status, redirect location, and negotiated representation.",
+    "Fallback behavior must be explicit when no applicable target exists."
+  ],
+  "authority_sources": [
+    "GS1 Conformant Resolver",
+    "GS1 Digital Link"
+  ]
+}

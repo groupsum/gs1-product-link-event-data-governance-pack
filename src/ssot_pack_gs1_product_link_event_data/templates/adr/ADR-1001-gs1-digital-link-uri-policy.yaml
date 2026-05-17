@@ -1,0 +1,28 @@
+{
+  "id": "adr:gs1-digital-link-uri-policy",
+  "number": 1001,
+  "slug": "gs1-digital-link-uri-policy",
+  "title": "GS1 Digital Link URI Policy",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "context": [
+    "Systems that publish GS1 identifier links need a stable decision for constructing and normalizing GS1 Digital Link URIs.",
+    "URI syntax decisions affect product pages, resolver inputs, QR codes, redirects, analytics capture, and evidence generation."
+  ],
+  "decision": [
+    "Use GS1 Digital Link URI Syntax as the authority for canonical URI construction.",
+    "Represent GS1 identification keys, qualifiers, and attributes in the URI positions defined by the authority source.",
+    "Normalize equivalent URI forms before storage, comparison, export, or evidence generation.",
+    "Treat non-canonical URI forms as accepted inputs only when a documented normalization path exists."
+  ],
+  "consequences": [
+    "Downstream implementations must make URI construction deterministic.",
+    "Validation fixtures should cover canonical links, accepted non-canonical inputs, and rejected malformed inputs.",
+    "Evidence should include examples showing the original input, normalized URI, and parsed identifier components."
+  ],
+  "authority_sources": [
+    "GS1 Digital Link",
+    "GS1 Digital Link URI Syntax"
+  ]
+}
