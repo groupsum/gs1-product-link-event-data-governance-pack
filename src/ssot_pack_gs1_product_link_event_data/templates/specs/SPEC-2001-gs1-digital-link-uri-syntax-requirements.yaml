@@ -1,0 +1,22 @@
+{
+  "id": "spc:gs1-digital-link-uri-syntax-requirements",
+  "number": 2001,
+  "slug": "gs1-digital-link-uri-syntax-requirements",
+  "title": "GS1 Digital Link URI Syntax Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-digital-link-uri-policy"
+  ],
+  "authority_sources": [
+    "GS1 Digital Link URI Syntax"
+  ],
+  "requirements": [
+    "Construct canonical GS1 Digital Link URIs using the authority-defined path structure.",
+    "Represent identification keys, key qualifiers, and attributes in their authority-defined URI positions.",
+    "Normalize accepted URI variants before storage, comparison, export, or evidence generation.",
+    "Reject malformed URI inputs when no documented normalization path exists."
+  ]
+}

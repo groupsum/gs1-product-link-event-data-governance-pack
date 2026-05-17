@@ -1,0 +1,24 @@
+{
+  "id": "spc:gs1-digital-link-identifier-requirements",
+  "number": 2002,
+  "slug": "gs1-digital-link-identifier-requirements",
+  "title": "GS1 Digital Link Identifier Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-digital-link-uri-policy",
+    "adr:gs1-product-master-data-policy"
+  ],
+  "authority_sources": [
+    "GS1 Digital Link",
+    "GS1 General Specifications"
+  ],
+  "requirements": [
+    "Validate supported GS1 identification keys before constructing product links.",
+    "Preserve key qualifier values such as lot and serial identifiers when represented in links.",
+    "Keep identifier validation separate from resolver target selection.",
+    "Expose validation evidence for accepted, normalized, and rejected identifier inputs."
+  ]
+}

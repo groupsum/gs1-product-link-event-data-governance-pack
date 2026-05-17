@@ -1,0 +1,34 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1003"
+number: 1003
+slug: "gs1-product-master-data-source-curation-requirements"
+title: "GS1 Product Master Data Source Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "gs1"
+  - "product-data"
+  - "gdsn"
+summary: "GS1 product master-data source curation must retain identifier, attribute, linked-data, and synchronization sources as explicit authorities."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "GS1 General Specifications"
+  - "GS1 Global Data Model"
+  - "GDSN"
+  - "GS1 Web Vocabulary"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  Source curation for product master-data targets MUST retain GS1 General Specifications for identifier authority.
+  
+  Source curation MUST retain GS1 Global Data Model for product and trade item attribute authority.
+  
+  Source curation MUST retain GDSN for product data synchronization authority.
+  
+  Source curation MUST retain GS1 Web Vocabulary where product, organization, location, and trade item linked-data semantics are curated.
+

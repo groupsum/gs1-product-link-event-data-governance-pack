@@ -1,0 +1,23 @@
+{
+  "id": "spc:gs1-conformant-resolver-requirements",
+  "number": 2003,
+  "slug": "gs1-conformant-resolver-requirements",
+  "title": "GS1 Conformant Resolver Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-resolver-behavior-policy"
+  ],
+  "authority_sources": [
+    "GS1 Conformant Resolver",
+    "GS1 Digital Link"
+  ],
+  "requirements": [
+    "Resolve GS1 Digital Link inputs using explicit link metadata.",
+    "Select link targets using supported link relations and negotiated representations.",
+    "Return documented redirect or response behavior for each supported resolver path.",
+    "Provide evidence showing request input, selected target, response status, and resolved location."
+  ]
+}

@@ -38,10 +38,18 @@ GS1 Product Link And Visibility Events
 
 ## Included SPECs
 
-- `spc:gs1-digital-link-contract` - GS1 Digital Link Contract
-- `spc:gs1-resolver-contract` - GS1 Resolver Contract
-- `spc:epcis-cbv-event-contract` - EPCIS CBV Event Contract
-- `spc:gs1-product-master-data-contract` - GS1 Product Master Data Contract
+- `spc:gs1-digital-link-uri-syntax-requirements` - GS1 Digital Link URI Syntax Requirements
+- `spc:gs1-digital-link-identifier-requirements` - GS1 Digital Link Identifier Requirements
+- `spc:gs1-conformant-resolver-requirements` - GS1 Conformant Resolver Requirements
+- `spc:gs1-web-vocabulary-product-requirements` - GS1 Web Vocabulary Product Requirements
+- `spc:gs1-web-vocabulary-organization-location-requirements` - GS1 Web Vocabulary Organization Location Requirements
+- `spc:epcis-event-envelope-requirements` - EPCIS Event Envelope Requirements
+- `spc:epcis-event-type-requirements` - EPCIS Event Type Requirements
+- `spc:cbv-business-step-disposition-requirements` - CBV Business Step Disposition Requirements
+- `spc:gs1-product-master-data-attribute-requirements` - GS1 Product Master Data Attribute Requirements
+- `spc:gs1-general-specifications-identifier-requirements` - GS1 General Specifications Identifier Requirements
+- `spc:gdsn-product-data-synchronization-requirements` - GDSN Product Data Synchronization Requirements
+- `spc:gs1-product-link-event-audit-evidence-requirements` - GS1 Product Link Event Audit Evidence Requirements
 
 ## Install With uv
 

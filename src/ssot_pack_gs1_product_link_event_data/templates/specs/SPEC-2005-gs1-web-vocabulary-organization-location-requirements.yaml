@@ -1,0 +1,22 @@
+{
+  "id": "spc:gs1-web-vocabulary-organization-location-requirements",
+  "number": 2005,
+  "slug": "gs1-web-vocabulary-organization-location-requirements",
+  "title": "GS1 Web Vocabulary Organization Location Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-web-vocabulary-publication-policy"
+  ],
+  "authority_sources": [
+    "GS1 Web Vocabulary"
+  ],
+  "requirements": [
+    "Publish organization, party, place, and location linked-data fields using applicable GS1 Web Vocabulary terms.",
+    "Preserve stable identifiers for organizations and locations used by products or events.",
+    "Trace public organization and location fields to authoritative source records.",
+    "Validate linked-data output for required vocabulary fields and unsupported field rejection."
+  ]
+}

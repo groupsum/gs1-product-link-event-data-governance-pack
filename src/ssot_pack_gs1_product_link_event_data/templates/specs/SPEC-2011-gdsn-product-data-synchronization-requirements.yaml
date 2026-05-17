@@ -1,0 +1,22 @@
+{
+  "id": "spc:gdsn-product-data-synchronization-requirements",
+  "number": 2011,
+  "slug": "gdsn-product-data-synchronization-requirements",
+  "title": "GDSN Product Data Synchronization Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-product-master-data-policy"
+  ],
+  "authority_sources": [
+    "GDSN"
+  ],
+  "requirements": [
+    "Represent synchronized product data using governed product data synchronization requirements.",
+    "Validate synchronization payloads against required product and trade item fields.",
+    "Preserve source product identifiers and update semantics across synchronization flows.",
+    "Provide evidence for accepted, rejected, and reconciled synchronization payloads."
+  ]
+}

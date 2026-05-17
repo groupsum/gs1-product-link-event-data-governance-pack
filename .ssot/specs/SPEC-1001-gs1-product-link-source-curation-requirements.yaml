@@ -1,0 +1,32 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1001"
+number: 1001
+slug: "gs1-product-link-source-curation-requirements"
+title: "GS1 Product Link Source Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "gs1"
+  - "digital-link"
+  - "resolver"
+summary: "GS1 product-link source curation must retain Digital Link, URI syntax, resolver, and Web Vocabulary targets as distinct source concerns."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "GS1 Digital Link"
+  - "GS1 Digital Link URI Syntax"
+  - "GS1 Conformant Resolver"
+  - "GS1 Web Vocabulary"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  Source curation for GS1 product-link targets MUST retain GS1 Digital Link, GS1 Digital Link URI Syntax, GS1 Conformant Resolver, and GS1 Web Vocabulary as explicit authority sources.
+  
+  Source curation MUST distinguish URI construction targets from resolver behavior targets and linked-data vocabulary targets.
+  
+  Source curation MUST NOT treat downstream implementation claims, runtime features, evidence rows, or release boundaries as part of this repository-local source authority.
+

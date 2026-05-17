@@ -1,0 +1,22 @@
+{
+  "id": "spc:epcis-event-envelope-requirements",
+  "number": 2006,
+  "slug": "epcis-event-envelope-requirements",
+  "title": "EPCIS Event Envelope Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:epcis-cbv-visibility-event-policy"
+  ],
+  "authority_sources": [
+    "EPCIS"
+  ],
+  "requirements": [
+    "Capture visibility events using the EPCIS event envelope structure.",
+    "Preserve event identity, event time, action, location, and product identifier fields where applicable.",
+    "Validate event payloads before storage, exchange, replay, or evidence generation.",
+    "Provide accepted and rejected event-envelope fixtures as conformance evidence."
+  ]
+}

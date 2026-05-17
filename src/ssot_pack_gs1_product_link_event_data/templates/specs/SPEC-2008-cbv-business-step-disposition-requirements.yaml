@@ -1,0 +1,22 @@
+{
+  "id": "spc:cbv-business-step-disposition-requirements",
+  "number": 2008,
+  "slug": "cbv-business-step-disposition-requirements",
+  "title": "CBV Business Step Disposition Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:epcis-cbv-visibility-event-policy"
+  ],
+  "authority_sources": [
+    "CBV"
+  ],
+  "requirements": [
+    "Validate controlled vocabulary values used for EPCIS business steps and dispositions.",
+    "Reject unsupported controlled vocabulary values unless explicitly mapped by policy.",
+    "Preserve business step and disposition semantics in event storage, export, and evidence.",
+    "Provide fixtures that demonstrate valid, invalid, and unsupported vocabulary values."
+  ]
+}

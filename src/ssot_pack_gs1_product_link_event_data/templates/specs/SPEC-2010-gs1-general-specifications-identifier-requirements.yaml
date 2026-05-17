@@ -1,0 +1,22 @@
+{
+  "id": "spc:gs1-general-specifications-identifier-requirements",
+  "number": 2010,
+  "slug": "gs1-general-specifications-identifier-requirements",
+  "title": "GS1 General Specifications Identifier Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-product-master-data-policy"
+  ],
+  "authority_sources": [
+    "GS1 General Specifications"
+  ],
+  "requirements": [
+    "Validate GS1 identifier allocation, format, and check-digit behavior where applicable.",
+    "Keep identifier validation independent from linked-data publication and event capture.",
+    "Reject identifiers that fail governed format or allocation checks.",
+    "Provide evidence for valid, invalid, normalized, and rejected identifier examples."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "spc:epcis-event-type-requirements",
+  "number": 2007,
+  "slug": "epcis-event-type-requirements",
+  "title": "EPCIS Event Type Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:epcis-cbv-visibility-event-policy"
+  ],
+  "authority_sources": [
+    "EPCIS"
+  ],
+  "requirements": [
+    "Support only explicitly governed EPCIS event types.",
+    "Validate event-type-specific required fields before accepting an event.",
+    "Preserve event type semantics across import, storage, export, and replay.",
+    "Maintain separate fixtures for accepted and rejected object, aggregation, transaction, transformation, or association event shapes when supported."
+  ]
+}

@@ -1,0 +1,35 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1004"
+number: 1004
+slug: "gs1-target-boundary-curation-requirements"
+title: "GS1 Target Boundary Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "gs1"
+  - "source-curation"
+summary: "GS1 target curation must keep product-link, visibility-event, and product master-data concerns explicit and separate."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "GS1 Digital Link"
+  - "GS1 Conformant Resolver"
+  - "GS1 Web Vocabulary"
+  - "EPCIS"
+  - "CBV"
+  - "GS1 General Specifications"
+  - "GS1 Global Data Model"
+  - "GDSN"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  GS1 source curation MUST retain separate target groupings for product-link behavior, visibility-event behavior, and product master-data behavior.
+  
+  Curated targets MUST be source-oriented and MUST NOT assert downstream implementation conformance.
+  
+  Curated targets MUST be maintainable without referencing sibling governance packs or downstream repository-specific proof rows.
+

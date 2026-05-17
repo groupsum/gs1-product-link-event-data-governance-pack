@@ -1,0 +1,29 @@
+{
+  "id": "spc:gs1-product-link-event-audit-evidence-requirements",
+  "number": 2012,
+  "slug": "gs1-product-link-event-audit-evidence-requirements",
+  "title": "GS1 Product Link Event Audit Evidence Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-digital-link-uri-policy",
+    "adr:gs1-resolver-behavior-policy",
+    "adr:epcis-cbv-visibility-event-policy",
+    "adr:gs1-product-master-data-policy"
+  ],
+  "authority_sources": [
+    "GS1 Digital Link",
+    "GS1 Conformant Resolver",
+    "EPCIS",
+    "CBV",
+    "GDSN"
+  ],
+  "requirements": [
+    "Produce audit evidence for URI syntax validation, resolver behavior, product-data validation, and visibility-event validation.",
+    "Keep evidence outputs tied to the specific authority source and conformance target under test.",
+    "Include source inputs, normalized outputs, validation results, and rejection reasons where applicable.",
+    "Retain evidence in a form that can be reviewed independently of runtime implementation details."
+  ]
+}

@@ -1,0 +1,30 @@
+schema_version: 9
+kind: "spec"
+id: "spc:1002"
+number: 1002
+slug: "gs1-visibility-event-source-curation-requirements"
+title: "GS1 Visibility Event Source Curation Requirements"
+status: "accepted"
+origin: "repo-local"
+decision_date: null
+tags:
+  - "gs1"
+  - "epcis"
+  - "cbv"
+summary: "GS1 visibility-event source curation must retain EPCIS and CBV as separate event-structure and controlled-vocabulary authority sources."
+supersedes: []
+superseded_by: []
+status_notes: []
+references:
+  - "EPCIS"
+  - "CBV"
+spec_kind: "governance"
+body: |-
+  ## Requirements
+  
+  Source curation for GS1 visibility-event targets MUST retain EPCIS as the authority for event envelope and event type targets.
+  
+  Source curation MUST retain CBV as the authority for controlled vocabulary targets such as business steps and dispositions.
+  
+  Source curation MUST keep visibility-event target authority separate from URI resolver authority and product master-data authority.
+

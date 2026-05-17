@@ -1,0 +1,23 @@
+{
+  "id": "spc:gs1-product-master-data-attribute-requirements",
+  "number": 2009,
+  "slug": "gs1-product-master-data-attribute-requirements",
+  "title": "GS1 Product Master Data Attribute Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-product-master-data-policy"
+  ],
+  "authority_sources": [
+    "GS1 Global Data Model",
+    "GDSN"
+  ],
+  "requirements": [
+    "Represent product and trade item attributes using governed product master-data authority sources.",
+    "Validate required product attributes before publication, linking, or synchronization.",
+    "Trace normalized product attributes to source product records.",
+    "Provide evidence showing source values, normalized values, and validation results."
+  ]
+}

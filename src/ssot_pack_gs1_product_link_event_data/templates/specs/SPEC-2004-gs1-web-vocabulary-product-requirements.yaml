@@ -1,0 +1,22 @@
+{
+  "id": "spc:gs1-web-vocabulary-product-requirements",
+  "number": 2004,
+  "slug": "gs1-web-vocabulary-product-requirements",
+  "title": "GS1 Web Vocabulary Product Requirements",
+  "status": "accepted",
+  "supersedes": [],
+  "superseded_by": [],
+  "spec_kind": "normative",
+  "adr_ids": [
+    "adr:gs1-web-vocabulary-publication-policy"
+  ],
+  "authority_sources": [
+    "GS1 Web Vocabulary"
+  ],
+  "requirements": [
+    "Publish product and trade item linked-data fields using applicable GS1 Web Vocabulary terms.",
+    "Trace published product fields to authoritative product records.",
+    "Preserve identifier consistency between linked-data documents and GS1 Digital Link URIs.",
+    "Reject unsupported or unsourced product vocabulary fields in validation."
+  ]
+}
