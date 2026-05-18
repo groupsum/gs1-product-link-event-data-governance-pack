@@ -1,10 +1,13 @@
+<div align="center">
+
 # gs1-product-link-event-data-governance-pack
 
 [![PyPI version](https://img.shields.io/pypi/v/gs1-product-link-event-data-governance-pack.svg)](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
 [![Python versions](https://img.shields.io/pypi/pyversions/gs1-product-link-event-data-governance-pack.svg)](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
 [![License](https://img.shields.io/pypi/l/gs1-product-link-event-data-governance-pack.svg)](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
 [![Publish](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/publish.yml)
-[![GitHub package](https://img.shields.io/badge/GitHub-package-24292f)](https://github.com/groupsum/gs1-product-link-event-data-governance-pack)
+
+</div>
 
 Installable SSOT governance pack for GS1 Digital Link, GS1 resolver behavior, EPCIS/CBV visibility events, product identifiers, and product master data.
 
