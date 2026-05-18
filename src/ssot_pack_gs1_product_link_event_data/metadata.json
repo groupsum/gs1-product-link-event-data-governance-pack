@@ -1,9 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "ssot_package_name": "ssot-pack-gs1-product-link-event-data",
+  "ssot_package_name": "gs1-product-link-event-data-governance-pack",
   "origin": {
     "id": "pack:gs1-product-link-event-data",
-    "package_name": "ssot-pack-gs1-product-link-event-data",
+    "package_name": "gs1-product-link-event-data-governance-pack",
     "import_name": "ssot_pack_gs1_product_link_event_data",
     "kind": "governance-pack",
     "title": "GS1 Product Link And Visibility Events",
@@ -19,7 +19,7 @@
   "trust": {
     "trusted_by_default": false,
     "origin": "extension-pack",
-    "reservation_owner": "extension-pack:ssot-pack-gs1-product-link-event-data"
+    "reservation_owner": "extension-pack:gs1-product-link-event-data-governance-pack"
   },
   "documents": {
     "adr": {

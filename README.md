@@ -1,4 +1,4 @@
-# ssot-pack-gs1-product-link-event-data
+# gs1-product-link-event-data-governance-pack
 
 Installable SSOT governance pack for GS1 Digital Link, GS1 resolver behavior, EPCIS/CBV visibility events, product identifiers, and product master data.
 
@@ -8,10 +8,10 @@ This repository is an installable SSOT Registry governance pack. It packages imm
 
 - Pack ID: `pack:gs1-product-link-event-data`
 - Priority: `P4.2`
-- PyPI package: `ssot-pack-gs1-product-link-event-data`
+- PyPI package: `gs1-product-link-event-data-governance-pack`
 - Import package: `ssot_pack_gs1_product_link_event_data`
 - GitHub repository: `groupsum/gs1-product-link-event-data-governance-pack`
-- Reservation owner: `extension-pack:ssot-pack-gs1-product-link-event-data`
+- Reservation owner: `extension-pack:gs1-product-link-event-data-governance-pack`
 
 ## Domain Focus
 
@@ -54,15 +54,15 @@ GS1 Product Link And Visibility Events
 ## Install With uv
 
 ```bash
-uv add ssot-pack-gs1-product-link-event-data
-uv add ssot-registry ssot-pack-gs1-product-link-event-data
+uv add gs1-product-link-event-data-governance-pack
+uv add ssot-registry gs1-product-link-event-data-governance-pack
 ```
 
 ## Use With The SSOT Registry CLI
 
 ```bash
-uvx --from ssot-registry ssot pack install ssot-pack-gs1-product-link-event-data
-uvx --from ssot-registry ssot pack sync . ssot-pack-gs1-product-link-event-data
+uvx --from ssot-registry ssot pack install gs1-product-link-event-data-governance-pack
+uvx --from ssot-registry ssot pack sync . gs1-product-link-event-data-governance-pack
 uv run ssot adr list .
 uv run ssot spec list .
 ```
@@ -79,5 +79,5 @@ spec_manifest = load_document_manifest("spec")
 ## Resources
 
 - GitHub repository: https://github.com/groupsum/gs1-product-link-event-data-governance-pack
-- PyPI package: https://pypi.org/project/ssot-pack-gs1-product-link-event-data/
+- PyPI package: https://pypi.org/project/gs1-product-link-event-data-governance-pack/
 - SSOT Registry: https://pypi.org/project/ssot-registry/

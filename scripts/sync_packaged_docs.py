@@ -13,7 +13,7 @@ except ModuleNotFoundError:  # pragma: no cover
 ROOT = Path(__file__).resolve().parents[1]
 ADR_TEMPLATES = ROOT / "src" / "ssot_pack_gs1_product_link_event_data" / "templates" / "adr"
 SPEC_TEMPLATES = ROOT / "src" / "ssot_pack_gs1_product_link_event_data" / "templates" / "specs"
-RESERVATION_OWNER = "extension-pack:ssot-pack-gs1-product-link-event-data"
+RESERVATION_OWNER = "extension-pack:gs1-product-link-event-data-governance-pack"
 MINIMUM_SCHEMA_VERSION = "0.4.0"
 
 

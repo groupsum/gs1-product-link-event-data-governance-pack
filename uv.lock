@@ -90,7 +90,7 @@ wheels = [
 ]
 
 [[package]]
-name = "ssot-pack-gs1-product-link-event-data"
+name = "gs1-product-link-event-data-governance-pack"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [

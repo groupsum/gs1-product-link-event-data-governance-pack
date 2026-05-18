@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ssot-pack-gs1-product-link-event-data"
+name = "gs1-product-link-event-data-governance-pack"
 version = "0.1.0"
 description = "Installable SSOT governance pack for GS1 Digital Link, GS1 resolver behavior, EPCIS/CBV visibility events, product identifiers, and product master data."
 readme = "README.md"
@@ -44,9 +44,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/groupsum/ssot-pack-gs1-product-link-event-data"
-Repository = "https://github.com/groupsum/ssot-pack-gs1-product-link-event-data"
-Issues = "https://github.com/groupsum/ssot-pack-gs1-product-link-event-data/issues"
+Homepage = "https://github.com/groupsum/gs1-product-link-event-data-governance-pack"
+Repository = "https://github.com/groupsum/gs1-product-link-event-data-governance-pack"
+Issues = "https://github.com/groupsum/gs1-product-link-event-data-governance-pack/issues"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
