@@ -17,12 +17,23 @@ dependencies = [
 keywords = [
   "ssot",
   "ssot-registry",
-  "extension-pack",
+  "ssot-pack-contracts",
   "governance-pack",
-    "governance",
+  "governance",
   "adr",
   "spec",
-  "uv",
+  "architecture-decision-records",
+  "conformance",
+  "compliance",
+  "gs1",
+  "digital-link",
+  "epcis",
+  "cbv",
+  "gdsn",
+  "product-data",
+  "resolver",
+  "supply-chain",
+  "visibility-events",
 ]
 classifiers = [
   "Development Status :: 3 - Alpha",
@@ -37,10 +48,15 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
+  "Topic :: Documentation",
   "Topic :: Software Development :: Documentation",
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Topic :: Software Development :: Quality Assurance",
   "Topic :: Utilities",
+  "Topic :: Office/Business",
+  "Topic :: Database",
+  "Topic :: Internet :: WWW/HTTP",
+  "Topic :: Scientific/Engineering :: Information Analysis",
 ]
 
 [project.urls]
