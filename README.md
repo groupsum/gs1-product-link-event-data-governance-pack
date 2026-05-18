@@ -50,26 +50,26 @@ GS1 Product Link And Visibility Events
 
 ## Included ADRs
 
-- `adr:gs1-digital-link-uri-policy` - GS1 Digital Link URI Policy
-- `adr:gs1-resolver-behavior-policy` - GS1 Resolver Behavior Policy
-- `adr:gs1-web-vocabulary-publication-policy` - GS1 Web Vocabulary Publication Policy
-- `adr:epcis-cbv-visibility-event-policy` - EPCIS CBV Visibility Event Policy
-- `adr:gs1-product-master-data-policy` - GS1 Product Master Data Policy
+- [`adr:gs1-digital-link-uri-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1001-gs1-digital-link-uri-policy.yaml) - GS1 Digital Link URI Policy
+- [`adr:gs1-resolver-behavior-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1002-gs1-resolver-behavior-policy.yaml) - GS1 Resolver Behavior Policy
+- [`adr:gs1-web-vocabulary-publication-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1003-gs1-web-vocabulary-publication-policy.yaml) - GS1 Web Vocabulary Publication Policy
+- [`adr:epcis-cbv-visibility-event-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1004-epcis-cbv-visibility-event-policy.yaml) - EPCIS CBV Visibility Event Policy
+- [`adr:gs1-product-master-data-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1005-gs1-product-master-data-policy.yaml) - GS1 Product Master Data Policy
 
 ## Included SPECs
 
-- `spc:gs1-digital-link-uri-syntax-requirements` - GS1 Digital Link URI Syntax Requirements
-- `spc:gs1-digital-link-identifier-requirements` - GS1 Digital Link Identifier Requirements
-- `spc:gs1-conformant-resolver-requirements` - GS1 Conformant Resolver Requirements
-- `spc:gs1-web-vocabulary-product-requirements` - GS1 Web Vocabulary Product Requirements
-- `spc:gs1-web-vocabulary-organization-location-requirements` - GS1 Web Vocabulary Organization Location Requirements
-- `spc:epcis-event-envelope-requirements` - EPCIS Event Envelope Requirements
-- `spc:epcis-event-type-requirements` - EPCIS Event Type Requirements
-- `spc:cbv-business-step-disposition-requirements` - CBV Business Step Disposition Requirements
-- `spc:gs1-product-master-data-attribute-requirements` - GS1 Product Master Data Attribute Requirements
-- `spc:gs1-general-specifications-identifier-requirements` - GS1 General Specifications Identifier Requirements
-- `spc:gdsn-product-data-synchronization-requirements` - GDSN Product Data Synchronization Requirements
-- `spc:gs1-product-link-event-audit-evidence-requirements` - GS1 Product Link Event Audit Evidence Requirements
+- [`spc:gs1-digital-link-uri-syntax-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2001-gs1-digital-link-uri-syntax-requirements.yaml) - GS1 Digital Link URI Syntax Requirements
+- [`spc:gs1-digital-link-identifier-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2002-gs1-digital-link-identifier-requirements.yaml) - GS1 Digital Link Identifier Requirements
+- [`spc:gs1-conformant-resolver-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2003-gs1-conformant-resolver-requirements.yaml) - GS1 Conformant Resolver Requirements
+- [`spc:gs1-web-vocabulary-product-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2004-gs1-web-vocabulary-product-requirements.yaml) - GS1 Web Vocabulary Product Requirements
+- [`spc:gs1-web-vocabulary-organization-location-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2005-gs1-web-vocabulary-organization-location-requirements.yaml) - GS1 Web Vocabulary Organization Location Requirements
+- [`spc:epcis-event-envelope-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2006-epcis-event-envelope-requirements.yaml) - EPCIS Event Envelope Requirements
+- [`spc:epcis-event-type-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2007-epcis-event-type-requirements.yaml) - EPCIS Event Type Requirements
+- [`spc:cbv-business-step-disposition-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2008-cbv-business-step-disposition-requirements.yaml) - CBV Business Step Disposition Requirements
+- [`spc:gs1-product-master-data-attribute-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2009-gs1-product-master-data-attribute-requirements.yaml) - GS1 Product Master Data Attribute Requirements
+- [`spc:gs1-general-specifications-identifier-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2010-gs1-general-specifications-identifier-requirements.yaml) - GS1 General Specifications Identifier Requirements
+- [`spc:gdsn-product-data-synchronization-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2011-gdsn-product-data-synchronization-requirements.yaml) - GDSN Product Data Synchronization Requirements
+- [`spc:gs1-product-link-event-audit-evidence-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2012-gs1-product-link-event-audit-evidence-requirements.yaml) - GS1 Product Link Event Audit Evidence Requirements
 
 ## Install With uv
 
