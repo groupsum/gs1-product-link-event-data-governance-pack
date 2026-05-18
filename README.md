@@ -28,7 +28,6 @@ Use this package when a downstream repository needs to answer: which standards, 
 ## Pack Metadata
 
 - Pack ID: `pack:gs1-product-link-event-data`
-- Priority: `P4.2`
 - PyPI package: `gs1-product-link-event-data-governance-pack`
 - Import package: `ssot_pack_gs1_product_link_event_data`
 - GitHub repository: `groupsum/gs1-product-link-event-data-governance-pack`
