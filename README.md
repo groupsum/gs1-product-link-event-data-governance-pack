@@ -33,7 +33,7 @@ Use this package when a downstream repository needs to answer: which standards, 
 - Pack ID: `pack:gs1-product-link-event-data`
 - PyPI package: `gs1-product-link-event-data-governance-pack`
 - Import package: `ssot_pack_gs1_product_link_event_data`
-- GitHub repository: `groupsum/gs1-product-link-event-data-governance-pack`
+- GitHub repository: [groupsum/gs1-product-link-event-data-governance-pack](https://github.com/groupsum/gs1-product-link-event-data-governance-pack)
 - Reservation owner: `extension-pack:gs1-product-link-event-data-governance-pack`
 
 ## Domain Focus
