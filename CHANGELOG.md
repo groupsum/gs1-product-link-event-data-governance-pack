@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.0.dev1
+
+- Declared canonical GS1 ownership relative to commerce semantics.
+
 ## 0.1.1.dev1
 
 - Pending release notes.

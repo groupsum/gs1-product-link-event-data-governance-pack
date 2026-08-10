@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "kind": "adr",
+  "id": "adr:gs1-syntax-and-identifiers-have-one-canonical-owner",
+  "number": 1006,
+  "slug": "gs1-syntax-and-identifiers-have-one-canonical-owner",
+  "title": "GS1 Syntax And Identifiers Have One Canonical Owner",
+  "status": "accepted",
+  "summary": "GS1 identifier syntax and vocabulary have one canonical owner.",
+  "body": "GS1 governance owns Digital Link, resolver behavior, identifiers, vocabulary, EPCIS, CBV, product master data, and related evidence. Commerce governance consumes mappings.",
+  "decision_date": "2026-08-10",
+  "references": [
+    "https://www.gs1.org/standards/gs1-digital-link"
+  ],
+  "supersedes": [],
+  "superseded_by": [],
+  "status_notes": [],
+  "tags": [
+    "gs1",
+    "syntax",
+    "and",
+    "identifiers",
+    "have",
+    "one",
+    "canonical",
+    "owner"
+  ]
+}

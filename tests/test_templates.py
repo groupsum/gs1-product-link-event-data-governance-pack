@@ -31,7 +31,7 @@ class GovernancePackManifestTests(unittest.TestCase):
     def test_pack_manifest_contract_is_exposed(self) -> None:
         manifest = load_pack_manifest()
         self.assertEqual("gs1-product-link-event-data-governance-pack", manifest["metadata"]["origin"]["package_name"])
-        self.assertEqual(5, len(manifest["documents"]["adr"]))
+        self.assertEqual(6, len(manifest["documents"]["adr"]))
         self.assertEqual(12, len(manifest["documents"]["spec"]))
 
     def test_packaged_documents_are_readable(self) -> None:
