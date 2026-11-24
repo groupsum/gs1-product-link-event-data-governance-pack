@@ -1,46 +1,311 @@
-<div align="center">
-
 # gs1-product-link-event-data-governance-pack
 
-[![PyPI version](https://img.shields.io/pypi/v/gs1-product-link-event-data-governance-pack.svg)](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
-[![Python versions](https://img.shields.io/pypi/pyversions/gs1-product-link-event-data-governance-pack.svg)](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
-[![License](https://img.shields.io/pypi/l/gs1-product-link-event-data-governance-pack.svg)](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
-[![Publish](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/publish.yml/badge.svg)](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/publish.yml)
+<!-- readme-standards:begin branding -->
+<p align="center"><a href="https://github.com/groupsum/readme-standards"><img src="https://raw.githubusercontent.com/groupsum/readme-standards/master/docs/assets/readme-standards.svg" alt="Groupsum README Standards" width="300"></a></p>
+<p align="center"><strong>gs1-product-link-event-data-governance-pack</strong></p>
+<p align="center">Installable SSOT governance pack for GS1 Digital Link, GS1 resolver behavior, EPCIS/CBV visibility events, product identifiers, and product master data.</p>
+<p align="center">
+<a href="https://pypi.org/project/gs1-product-link-event-data-governance-pack/"><img alt="pypi: gs1-product-link-event-data-governance-pack" src="https://img.shields.io/pypi/v/gs1-product-link-event-data-governance-pack?labelColor=1E293B&amp;color=1D4ED8"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/pyproject.toml"><img alt="Source version: 0.2.0.dev1" src="https://img.shields.io/static/v1?label=Source%20version&amp;message=0.2.0.dev1&amp;labelColor=1E293B&amp;color=4338CA"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/pyproject.toml"><img alt="Python: &gt;=3.10,&lt;3.15" src="https://img.shields.io/static/v1?label=Python&amp;message=%3E%3D3.10%2C%3C3.15&amp;labelColor=1E293B&amp;color=0F766E"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/pyproject.toml"><img alt="Layer: governance" src="https://img.shields.io/static/v1?label=Layer&amp;message=governance&amp;labelColor=1E293B&amp;color=6D28D9"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/README.md#lifecycle-and-migration"><img alt="Lifecycle: active" src="https://img.shields.io/static/v1?label=Lifecycle&amp;message=active&amp;labelColor=1E293B&amp;color=166534"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/LICENSE"><img alt="License: Apache-2.0" src="https://img.shields.io/static/v1?label=License&amp;message=Apache-2.0&amp;labelColor=1E293B&amp;color=86198F"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/README.md#notices"><img alt="Notice: not required" src="https://img.shields.io/static/v1?label=Notice&amp;message=not%20required&amp;labelColor=1E293B&amp;color=475569"></a>
+</p>
+<p align="center">
+<a href="https://pypi.org/project/gs1-product-link-event-data-governance-pack/"><img alt="Monthly PyPI downloads: gs1-product-link-event-data-governance-pack" src="https://img.shields.io/pypi/dm/gs1-product-link-event-data-governance-pack?labelColor=1E293B&amp;color=0E7490"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/README.md"><img alt="README hits: gs1-product-link-event-data-governance-pack" src="https://hits.sh/github.com/groupsum/gs1-product-link-event-data-governance-pack/README.md.svg?label=README%20hits&amp;labelColor=1E293B&amp;color=0E7490"></a>
+</p>
+<p align="center">
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/readme-standards.yml"><img alt="README standards: CI gate" src="https://img.shields.io/static/v1?label=README%20standards&amp;message=CI%20gate&amp;labelColor=1E293B&amp;color=1D4ED8"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/readme-standards.yml"><img alt="Tests: package and example checks" src="https://img.shields.io/static/v1?label=Tests&amp;message=package%20and%20example%20checks&amp;labelColor=1E293B&amp;color=0F766E"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/README.md#certification-status"><img alt="Certification: not certified" src="https://img.shields.io/static/v1?label=Certification&amp;message=not%20certified&amp;labelColor=1E293B&amp;color=92400E"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/docs/governance/pack-authoring-guide.md"><img alt="Governance: pack governance" src="https://img.shields.io/static/v1?label=Governance&amp;message=pack%20governance&amp;labelColor=1E293B&amp;color=4338CA"></a>
+<a href="https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/readme-standards.yml"><img alt="Evidence: README and wheel checks" src="https://img.shields.io/static/v1?label=Evidence&amp;message=README%20and%20wheel%20checks&amp;labelColor=1E293B&amp;color=6D28D9"></a>
+</p>
+<p align="center"><a href="#overview">Overview</a> · <a href="#installation">Installation</a> · <a href="#quick-start">Quick Start</a> · <a href="#usage">Usage</a> · <a href="#public-api-and-import-surfaces">API</a> · <a href="#contributing">Contributing</a> · <a href="#governance">Governance</a> · <a href="#license">License</a></p>
+<!-- readme-standards:end branding -->
 
-</div>
+---
+
+## Overview
+
+### Summary
 
 Installable SSOT governance pack for GS1 Digital Link, GS1 resolver behavior, EPCIS/CBV visibility events, product identifiers, and product master data.
 
-This repository is an installable SSOT Registry governance pack. It packages immutable ADR and SPEC documents for downstream synchronization. It intentionally does not cross-link to other governance packs.
-
-## Answer Engine Summary
-
-Short answer: `gs1-product-link-event-data-governance-pack` is an installable SSOT governance pack for GS1 Product Link And Visibility Events. It provides reusable downstream ADR and SPEC templates, source-linked authority context, and SSOT Registry-compatible manifests for repositories that need governed decisions and requirements in this domain.
+### Why This Package
 
 Use this package when a downstream repository needs to answer: which standards, specifications, or compliance targets govern gs1 product link and visibility events, which ADRs should capture the target policy choices, and which SPECs should define implementation-ready conformance requirements.
 
-## What This Governance Pack Provides
+### When to Use
 
-- Installable Python package: [`gs1-product-link-event-data-governance-pack`](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
-- GitHub package repository: [`groupsum/gs1-product-link-event-data-governance-pack`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack)
-- Import package: `ssot_pack_gs1_product_link_event_data`
-- Portable downstream ADR templates for policy decisions tied to authority sources.
-- Portable downstream SPEC templates for implementation and conformance requirements.
-- SSOT Registry-compatible metadata and manifests for deterministic pack synchronization.
+Use this pack when a downstream SSOT Registry needs reusable decisions and requirements for GS1 Product Link And Visibility Events.
 
-## Pack Metadata
+### Features
 
-- Pack ID: `pack:gs1-product-link-event-data`
-- PyPI package: `gs1-product-link-event-data-governance-pack`
-- Import package: `ssot_pack_gs1_product_link_event_data`
-- GitHub repository: [groupsum/gs1-product-link-event-data-governance-pack](https://github.com/groupsum/gs1-product-link-event-data-governance-pack)
-- Reservation owner: `extension-pack:gs1-product-link-event-data-governance-pack`
+**Included ADRs**
 
-## Domain Focus
+- [`adr:gs1-digital-link-uri-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1001-gs1-digital-link-uri-policy.yaml) — GS1 Digital Link URI Policy
+- [`adr:gs1-resolver-behavior-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1002-gs1-resolver-behavior-policy.yaml) — GS1 Resolver Behavior Policy
+- [`adr:gs1-web-vocabulary-publication-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1003-gs1-web-vocabulary-publication-policy.yaml) — GS1 Web Vocabulary Publication Policy
+- [`adr:epcis-cbv-visibility-event-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1004-epcis-cbv-visibility-event-policy.yaml) — EPCIS CBV Visibility Event Policy
+- [`adr:gs1-product-master-data-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1005-gs1-product-master-data-policy.yaml) — GS1 Product Master Data Policy
+- [`adr:gs1-syntax-and-identifiers-have-one-canonical-owner`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1006-gs1-syntax-and-identifiers-have-one-canonical-owner.yaml) — GS1 Syntax And Identifiers Have One Canonical Owner
 
-GS1 Product Link And Visibility Events
+**Included SPECs**
 
-## Authority Sources
+- [`spc:gs1-digital-link-uri-syntax-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2001-gs1-digital-link-uri-syntax-requirements.yaml) — GS1 Digital Link URI Syntax Requirements
+- [`spc:gs1-digital-link-identifier-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2002-gs1-digital-link-identifier-requirements.yaml) — GS1 Digital Link Identifier Requirements
+- [`spc:gs1-conformant-resolver-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2003-gs1-conformant-resolver-requirements.yaml) — GS1 Conformant Resolver Requirements
+- [`spc:gs1-web-vocabulary-product-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2004-gs1-web-vocabulary-product-requirements.yaml) — GS1 Web Vocabulary Product Requirements
+- [`spc:gs1-web-vocabulary-organization-location-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2005-gs1-web-vocabulary-organization-location-requirements.yaml) — GS1 Web Vocabulary Organization Location Requirements
+- [`spc:epcis-event-envelope-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2006-epcis-event-envelope-requirements.yaml) — EPCIS Event Envelope Requirements
+- [`spc:epcis-event-type-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2007-epcis-event-type-requirements.yaml) — EPCIS Event Type Requirements
+- [`spc:cbv-business-step-disposition-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2008-cbv-business-step-disposition-requirements.yaml) — CBV Business Step Disposition Requirements
+- [`spc:gs1-product-master-data-attribute-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2009-gs1-product-master-data-attribute-requirements.yaml) — GS1 Product Master Data Attribute Requirements
+- [`spc:gs1-general-specifications-identifier-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2010-gs1-general-specifications-identifier-requirements.yaml) — GS1 General Specifications Identifier Requirements
+- [`spc:gdsn-product-data-synchronization-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2011-gdsn-product-data-synchronization-requirements.yaml) — GDSN Product Data Synchronization Requirements
+- [`spc:gs1-product-link-event-audit-evidence-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2012-gs1-product-link-event-audit-evidence-requirements.yaml) — GS1 Product Link Event Audit Evidence Requirements
+
+### Non-Goals
+
+The pack supplies governance records. A downstream application implements the controls and collects its own conformance evidence.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Use Python `>=3.10,<3.15`. Downstream synchronization also requires SSOT Registry and permission to write the target registry.
+
+### Installation
+
+If the desired PyPI release is a prerelease, use its exact version in the installer command.
+
+#### uv
+
+<!-- readme-standards:begin installation.uv -->
+```bash
+uv add gs1-product-link-event-data-governance-pack
+```
+<!-- readme-standards:end installation.uv -->
+
+#### pip
+
+<!-- readme-standards:begin installation.pip -->
+```bash
+python -m pip install gs1-product-link-event-data-governance-pack
+```
+<!-- readme-standards:end installation.pip -->
+
+#### Poetry
+
+<!-- readme-standards:begin installation.poetry -->
+```bash
+poetry add gs1-product-link-event-data-governance-pack
+```
+<!-- readme-standards:end installation.poetry -->
+
+### Quick Start
+
+#### Example
+
+<!-- readme-standards:begin example.quick-start -->
+Source: [examples/quick_start.py](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/examples/quick_start.py).
+
+```python
+"""Inspect the installed pack identity."""
+
+from ssot_pack_gs1_product_link_event_data import load_pack_metadata
+
+metadata = load_pack_metadata()
+assert metadata["origin"]["id"] == "pack:gs1-product-link-event-data"
+print(metadata["origin"]["id"])
+```
+<!-- readme-standards:end example.quick-start -->
+
+#### Expected Result
+
+The script prints `pack:gs1-product-link-event-data` from the installed pack metadata.
+
+---
+
+## Usage
+
+### Common Workflows
+
+<!-- readme-standards:begin example.usage -->
+Source: [examples/usage.py](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/examples/usage.py).
+
+```python
+"""Find a specification and its downstream path in the installed manifest."""
+
+from ssot_pack_gs1_product_link_event_data import load_document_manifest
+
+specification = next(
+    row for row in load_document_manifest("spec")
+    if row["id"] == "spc:gs1-digital-link-uri-syntax-requirements"
+)
+assert specification["target_path"] == ".ssot/specs/SPEC-2001-gs1-digital-link-uri-syntax-requirements.yaml"
+```
+<!-- readme-standards:end example.usage -->
+
+Use the downstream environment that has both SSOT Registry and `gs1-product-link-event-data-governance-pack` installed. Inspect the pack and preflight the target registry before approving synchronization.
+
+```bash
+uv run ssot pack inspect ssot_pack_gs1_product_link_event_data
+uv run ssot pack preflight . ssot_pack_gs1_product_link_event_data --all
+uv run ssot pack sync . ssot_pack_gs1_product_link_event_data --all --trust --yes
+uv run ssot validate .
+```
+
+### Configuration
+
+Select the installed import package `ssot_pack_gs1_product_link_event_data` in SSOT Registry. Review reservation owner `extension-pack:gs1-product-link-event-data-governance-pack` and the target's trust policy before syncing.
+
+### Error Handling
+
+If preflight reports a schema, trust, or document-number conflict, resolve it in the target registry and repeat preflight before synchronization.
+
+### Best Practices
+
+Pin the pack version in downstream projects. Reference document IDs in local governance and inspect the change set before granting trust.
+
+---
+
+## Package Boundary
+
+### What It Owns
+
+Declared canonical GS1 ownership relative to commerce semantics.
+
+### Public API and Import Surfaces
+
+Import `load_pack_metadata`, `load_document_manifest`, and `read_packaged_document_text` from `ssot_pack_gs1_product_link_event_data` to inspect packaged records.
+
+### Entry Points
+
+<!-- readme-standards:begin entry-points -->
+This package declares no command-line, GUI, or plugin entry points in its manifest.
+<!-- readme-standards:end entry-points -->
+
+### Injected Dependencies
+
+The package binds its metadata and document loaders through `ssot-pack-contracts`. The caller supplies the target registry to SSOT Registry when synchronizing.
+
+### Protocol Consumers
+
+SSOT Registry uses the pack metadata, document manifests, and bundled templates during inspect, preflight, and sync.
+
+### Extensions
+
+Define downstream policies as local records and reference the pack's document IDs. Send proposed changes to the canonical pack through repository review.
+
+---
+
+## Operations and Readiness
+
+### Operational Requirements
+
+Local inspection reads installed package resources. Synchronization requires an initialized downstream registry and explicit operator approval.
+
+### Health and Observability
+
+Review the preflight and sync output, then use `ssot validate` to check the resulting registry.
+
+### Security and Resource Limits
+
+Implicit trust is disabled. Review the exact distribution, version, records, and reserved IDs before enabling trust in a target registry.
+
+### Compatibility
+
+- Python `>=3.10,<3.15`
+- SSOT Registry schema `>=0.4.0`
+- SSOT pack contracts `>=0.2.17,<0.3.0`
+
+---
+
+## Verification
+
+### Tests
+
+Run `python -m unittest discover -s tests -v` with the pack installed. The [README workflow](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/readme-standards.yml) checks the source README and runs both examples against an installed wheel.
+
+### Certification Status
+
+The pack has no external certification. Downstream adoption requires evidence for the controls an application implements.
+
+### Evidence
+
+See the [README workflow](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/actions/workflows/readme-standards.yml) for package and documentation verification and the [packaged records](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates) for document-level sources.
+
+---
+
+## FAQ
+
+### Why
+
+**Why do document IDs matter?** Downstream records use them to trace an adopted decision or requirement to the pack that owns it.
+
+### How
+
+**How do I preview changes?** Use the registry's pack preflight before approving a sync.
+
+### When
+
+**When should I upgrade?** Read the changelog and preflight the new version against the target registry before applying it.
+
+---
+
+## Documentation and Related Packages
+
+### More Documentation
+
+See the [Pack guide](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/docs/pack-guide.md), [changelog](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/CHANGELOG.md), and [pack metadata](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/metadata.json).
+
+### Related Packages
+
+[SSOT Registry](https://pypi.org/project/ssot-registry/) manages downstream registries. [SSOT Pack Contracts](https://pypi.org/project/ssot-pack-contracts/) provides the shared pack interface.
+
+### Project Links
+
+<!-- readme-standards:begin project-links -->
+- [Homepage](https://github.com/groupsum/gs1-product-link-event-data-governance-pack)
+- [Issues](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/issues)
+- [Repository](https://github.com/groupsum/gs1-product-link-event-data-governance-pack)
+- [pypi: gs1-product-link-event-data-governance-pack](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
+<!-- readme-standards:end project-links -->
+
+---
+
+## Contributing
+
+### How to Contribute
+
+Open an [issue](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/issues) or pull request describing the affected records, their authority, and the expected downstream effect.
+
+### Development Setup
+
+Install the checkout with `python -m pip install -e .`, then run `python -m unittest discover -s tests -v`. On Python 3.11 or newer, run `uvx --from readme-standards==0.1.3 readme-standards check`.
+
+### Notes for Maintainers
+
+Keep source links, document identifiers, and committed manifest hashes aligned. Run `uvx --from readme-standards==0.1.3 readme-standards render --write` after changing generated README inputs.
+
+---
+
+## Governance
+
+### Ownership and Decision Making
+
+Groupsum maintains `pack:gs1-product-link-event-data`. The pack's reservation owner is `extension-pack:gs1-product-link-event-data-governance-pack`. Downstream registry operators approve synchronization.
+
+### Standards and Policies
+
+**Authority Sources**
 
 - [GS1 Web Vocabulary](https://www.gs1.org/gs1-web-vocabulary)
 - [GS1 Digital Link](https://www.gs1.org/standards/gs1-digital-link)
@@ -51,61 +316,22 @@ GS1 Product Link And Visibility Events
 - [GS1 Global Data Model](https://www.gs1.org/standards/gs1-global-data-model)
 - [GDSN](https://www.gs1.org/services/gdsn)
 
-## Included ADRs
+### Lifecycle and Migration
 
-- [`adr:gs1-digital-link-uri-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1001-gs1-digital-link-uri-policy.yaml) - GS1 Digital Link URI Policy
-- [`adr:gs1-resolver-behavior-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1002-gs1-resolver-behavior-policy.yaml) - GS1 Resolver Behavior Policy
-- [`adr:gs1-web-vocabulary-publication-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1003-gs1-web-vocabulary-publication-policy.yaml) - GS1 Web Vocabulary Publication Policy
-- [`adr:epcis-cbv-visibility-event-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1004-epcis-cbv-visibility-event-policy.yaml) - EPCIS CBV Visibility Event Policy
-- [`adr:gs1-product-master-data-policy`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/adr/ADR-1005-gs1-product-master-data-policy.yaml) - GS1 Product Master Data Policy
+Review [release changes](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/CHANGELOG.md) and preflight the chosen version against each downstream registry.
 
-## Included SPECs
+---
 
-- [`spc:gs1-digital-link-uri-syntax-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2001-gs1-digital-link-uri-syntax-requirements.yaml) - GS1 Digital Link URI Syntax Requirements
-- [`spc:gs1-digital-link-identifier-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2002-gs1-digital-link-identifier-requirements.yaml) - GS1 Digital Link Identifier Requirements
-- [`spc:gs1-conformant-resolver-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2003-gs1-conformant-resolver-requirements.yaml) - GS1 Conformant Resolver Requirements
-- [`spc:gs1-web-vocabulary-product-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2004-gs1-web-vocabulary-product-requirements.yaml) - GS1 Web Vocabulary Product Requirements
-- [`spc:gs1-web-vocabulary-organization-location-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2005-gs1-web-vocabulary-organization-location-requirements.yaml) - GS1 Web Vocabulary Organization Location Requirements
-- [`spc:epcis-event-envelope-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2006-epcis-event-envelope-requirements.yaml) - EPCIS Event Envelope Requirements
-- [`spc:epcis-event-type-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2007-epcis-event-type-requirements.yaml) - EPCIS Event Type Requirements
-- [`spc:cbv-business-step-disposition-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2008-cbv-business-step-disposition-requirements.yaml) - CBV Business Step Disposition Requirements
-- [`spc:gs1-product-master-data-attribute-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2009-gs1-product-master-data-attribute-requirements.yaml) - GS1 Product Master Data Attribute Requirements
-- [`spc:gs1-general-specifications-identifier-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2010-gs1-general-specifications-identifier-requirements.yaml) - GS1 General Specifications Identifier Requirements
-- [`spc:gdsn-product-data-synchronization-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2011-gdsn-product-data-synchronization-requirements.yaml) - GDSN Product Data Synchronization Requirements
-- [`spc:gs1-product-link-event-audit-evidence-requirements`](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/src/ssot_pack_gs1_product_link_event_data/templates/specs/SPEC-2012-gs1-product-link-event-audit-evidence-requirements.yaml) - GS1 Product Link Event Audit Evidence Requirements
+## License and Attribution
 
-## Install With uv
+### License
 
-```bash
-uv add gs1-product-link-event-data-governance-pack
-uv add ssot-registry gs1-product-link-event-data-governance-pack
-```
+<!-- readme-standards:begin license -->
+Licensed under `Apache-2.0`. See [LICENSE](https://github.com/groupsum/gs1-product-link-event-data-governance-pack/blob/master/LICENSE).
+<!-- readme-standards:end license -->
 
-## Use With The SSOT Registry CLI
+### Notices
 
-```bash
-uvx --from ssot-registry ssot pack install gs1-product-link-event-data-governance-pack
-uvx --from ssot-registry ssot pack sync . gs1-product-link-event-data-governance-pack
-uv run ssot adr list .
-uv run ssot spec list .
-```
-
-## Programmatic Usage
-
-```python
-from ssot_pack_gs1_product_link_event_data import load_document_manifest
-
-adr_manifest = load_document_manifest("adr")
-spec_manifest = load_document_manifest("spec")
-```
-
-## Resources
-
-- GitHub package repository: [groupsum/gs1-product-link-event-data-governance-pack](https://github.com/groupsum/gs1-product-link-event-data-governance-pack)
-- PyPI package: [gs1-product-link-event-data-governance-pack](https://pypi.org/project/gs1-product-link-event-data-governance-pack/)
-- SSOT Registry: [ssot-registry](https://pypi.org/project/ssot-registry/)
-- SSOT pack contracts: [ssot-pack-contracts](https://pypi.org/project/ssot-pack-contracts/)
-
-## Normative ownership boundary
-
-Declared canonical GS1 ownership relative to commerce semantics.
+<!-- readme-standards:begin notices -->
+No separate NOTICE file is declared. Review the license and bundled third-party attributions.
+<!-- readme-standards:end notices -->
