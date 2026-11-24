@@ -96,7 +96,7 @@
     "title": "GS1 Syntax And Identifiers Have One Canonical Owner",
     "filename": "ADR-1006-gs1-syntax-and-identifiers-have-one-canonical-owner.yaml",
     "target_path": ".ssot/adr/ADR-1006-gs1-syntax-and-identifiers-have-one-canonical-owner.yaml",
-    "sha256": "660e4857bf0d978f383a268f5a5d7b5acbb4c65eb76c913e4def136e466e0911",
+    "sha256": "fc09ce642460b27231ccf08615779f59a15fb861525336edd1088dbac2dbbf9f",
     "origin": "extension-pack",
     "reservation_owner": "extension-pack:gs1-product-link-event-data-governance-pack",
     "immutable": true,
